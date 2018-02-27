@@ -1,0 +1,86 @@
+body{
+  background-image: url(../image/salle_serdaigle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header{
+  margin: -10px;
+  margin-bottom: 0px;;
+  padding-top: 10px;
+  background-color: #5E58C6;
+
+}
+
+header > div{
+  position: relative;
+  left: 15%;
+  width: 80%;
+}
+
+header div > h1{
+  margin-top: 0px;
+  color: whitesmoke;
+  font-weight: normal;
+}
+
+nav{
+  height: 30px;
+  position: relative;
+  right: 0.5%;
+}
+
+nav h4{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 1.2em
+}
+
+nav span{
+  padding: 5px;
+}
+
+
+nav a, nav {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  transition: 0.5s;
+  color: #B2AEF4;
+}
+
+div.content{
+  margin: 0px -10px;
+  padding: 25px 15%;
+  padding-bottom: 50px;
+  background-color: rgba(255,255,255,0.7);
+  font-size: 16px;
+}
+
+
+footer{
+  color: white;
+  
+  margin: -20px;
+  padding: 20px;
+  background-color: #5E58C6;
+  
+  text-align: center;
+}
+
+
+@media (max-width: 1100px){
+  nav{
+    height: 60px;
+  }
+}
+
+@media (max-width: 450px){
+  div.content{
+    padding: 25px 0px;
+  }
+}

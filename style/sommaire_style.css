@@ -1,0 +1,50 @@
+h5{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+div.bibliotheque{
+  text-align: center;
+}
+
+div.livre{
+  display: inline-block;
+  margin: 10px 2.5%;
+  vertical-align:   middle;
+  width: 280px;
+  
+  box-shadow: 0px 0px 6px 3px black;
+  
+  transition: 1s 0.1s;
+}
+
+div.livre:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 3px 12px 6px black
+}
+
+div.livre > h3 {
+  margin-top: 10px;
+}
+
+img{
+  width: 250px;
+  display: block;
+  margin: 15px auto;
+}
+
+div.caption{
+  margin-bottom: 15px;
+}
+
+@media (max-width: 440px){
+  div.intro, div.content > h3{
+    margin: 25px;
+  }
+  
+  div.livre{
+    transform: scale(0.8);
+  }
+  div.livre:hover{
+    transform: scale(0.9);
+}
