@@ -1,0 +1,9 @@
+div.content section:first-of-type{
+  font-size: larger;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+div.content section:first-of-type h2{
+  margin: auto;
+}

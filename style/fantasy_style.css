@@ -1,3 +1,18 @@
+@font-face{
+    font-family: 'almendra';
+    src: url(../font/almendradisplay-regular-webfont.woff2) format('woff2'),
+         url(../font/almendradisplay-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'artistique';
+    src: url(../font/FantaisieArtistique.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
   background-image: url(../image/salle_serdaigle.jpg);
   background-position: center;
@@ -5,10 +20,13 @@ body{
   background-attachment: fixed;
   background-size: cover;
   margin: 0 auto;
+	font-family: 'artistique';
+  font-size: 1.25em;
+
 }
 
 header{
-  width: 100%
+  width: 100%;
   padding-top: 10px;
   background-color: #5E58C6;
 
@@ -35,7 +53,7 @@ nav{
 nav h4{
   margin-top: 0px;
   margin-bottom: 5px;
-  font-size: 1.2em
+  font-size: larger;
 }
 
 nav span{
@@ -57,7 +75,6 @@ div.content{
   padding-top: 25px;
   padding-bottom: 50px;
   background-color: rgba(255,255,255,0.7);
-  font-size: 16px;
   width: 100%;
   position: relative;
 }
@@ -72,6 +89,7 @@ footer{
   text-align: center;
   width: 100%;
 
+  padding: 20px 0px;
 }
 
 
@@ -82,7 +100,7 @@ footer{
 }
 
 @media (max-width: 450px){
-  div.content{
-    padding: 25px 0px;
+  div.content > *{
+    margin: auto 7.5%;
   }
 }
