@@ -7,3 +7,15 @@ div.content section:first-of-type{
 div.content section:first-of-type h2{
   margin: auto;
 }
+
+table, td, th{
+  border: black 1px solid;
+}
+
+td, th{
+  padding: 15px;
+}
+
+td:nth-child(3){
+  padding: 0px;
+}

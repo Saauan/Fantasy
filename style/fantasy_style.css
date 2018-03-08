@@ -60,14 +60,20 @@ nav span{
   padding: 5px;
 }
 
+span#page{
+  font-weight: bold;
+}
 
 nav a, nav {
   color: white;
   text-decoration: none;
 }
 
-nav a:hover{
+nav a{
   transition: 0.5s;
+}
+
+nav a:hover{
   color: #B2AEF4;
 }
 
