@@ -8,6 +8,18 @@ div.content section:first-of-type h2{
   margin: auto;
 }
 
+h2 em, h3 em{
+  margin-right: 5px; /* Compense pour l'italique */
+}
+
+figure{
+  text-align: center;
+}
+
+figure img{
+  width:70%
+}
+
 table, td, th{
   border: black 1px solid;
 }
@@ -16,6 +28,11 @@ td, th{
   padding: 15px;
 }
 
-td:nth-child(3){
-  padding: 0px;
+td img{
+  height: 200px;
+  transition: 0.75s;
+}
+
+td img:hover{
+  transform: scale(1.4);
 }
