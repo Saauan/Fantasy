@@ -1,6 +1,15 @@
+div.content > h2:first-of-type{
+  font-size: 2.0em;
+  margin-top: 0px;
+}
+
 h5{
   text-align: center;
   font-size: 1.5em;
+}
+
+div.intro p:first-of-type::first-letter{
+  font-size: 200%;
 }
 
 div.bibliotheque{

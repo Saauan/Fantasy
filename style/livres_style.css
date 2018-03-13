@@ -12,12 +12,20 @@ h2 em, h3 em{
   margin-right: 5px; /* Compense pour l'italique */
 }
 
+section > p:first-of-type::first-letter{
+  font-size: 200%;
+}
+
 figure{
   text-align: center;
 }
 
 figure img{
   width:70%
+}
+
+table{
+  width: 100%;
 }
 
 table, td, th{
@@ -28,6 +36,10 @@ td, th{
   padding: 15px;
 }
 
+table td:last-of-type, table td:first-of-type{
+  text-align: center;
+}
+
 td img{
   height: 200px;
   transition: 0.75s;
@@ -35,4 +47,10 @@ td img{
 
 td img:hover{
   transform: scale(1.4);
+}
+
+@media screen and (max-width:800px){
+  table td:last-of-type, table th:last-of-type{
+    display: none
+  }
 }
