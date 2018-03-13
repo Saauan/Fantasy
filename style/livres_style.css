@@ -4,8 +4,21 @@ div.content section:first-of-type{
   margin-bottom: 40px;
 }
 
+
+h2, h3 {
+  text-decoration: underline black;
+}
+
 div.content section:first-of-type h2{
   margin: auto;
+}
+
+span.livre{
+  font-style: italic;
+}
+
+span.saga{
+  font-weight: bold;
 }
 
 h2 em, h3 em{

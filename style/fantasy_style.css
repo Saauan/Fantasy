@@ -100,7 +100,7 @@ footer{
 }
 
 span.auteur{
-  font-style: italic;
+  border-bottom: 1px black dotted;
 }
 
 @media (max-width: 1100px){
