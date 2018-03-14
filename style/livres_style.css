@@ -1,16 +1,24 @@
-div.content section:first-of-type{
+div.content > section:first-of-type{
   font-size: larger;
   margin-top: 0px;
   margin-bottom: 40px;
 }
 
-
-h2, h3 {
-  text-decoration: underline black;
+div.content > section:first-of-type h2{
+  margin: auto;
 }
 
-div.content section:first-of-type h2{
-  margin: auto;
+h2 em{
+  margin-right: 5px; /* Compense pour l'italique */
+}
+
+h3 {
+  text-decoration: underline black;
+  font-size: larger;
+}
+
+div.content a{
+  color: #5E58C6;
 }
 
 span.livre{
@@ -21,9 +29,6 @@ span.saga{
   font-weight: bold;
 }
 
-h2 em, h3 em{
-  margin-right: 5px; /* Compense pour l'italique */
-}
 
 section > p:first-of-type::first-letter{
   font-size: 200%;
@@ -31,14 +36,29 @@ section > p:first-of-type::first-letter{
 
 figure{
   text-align: center;
+  float: right;
+  width: 50%;
 }
 
 figure img{
-  width:70%
+  width:100%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+
+@media screen and (max-width: 1200px){
+  div.content figure{
+    float: none;
+    margin: auto;
+  }
+}
+
+li h4{
+  margin-bottom: 10px;
 }
 
 table{
   width: 100%;
+/*  background-color: rgba(94,88,198,0.5); */
 }
 
 table, td, th{
@@ -49,17 +69,19 @@ td, th{
   padding: 15px;
 }
 
-table td:last-of-type, table td:first-of-type{
+table td:last-of-type{
   text-align: center;
 }
 
 td img{
   height: 200px;
   transition: 0.75s;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
 }
 
 td img:hover{
   transform: scale(1.4);
+  box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.6); 
 }
 
 @media screen and (max-width:800px){

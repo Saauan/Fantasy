@@ -1,0 +1,89 @@
+Coignion Tristan
+SESI Maths/Info
+Groupe 11
+
+##########
+fantasy_style.css
+
+header div>h1 
+Représente le titre affiché en haut de la page du site
+
+span#page
+Sélectionne le span qui contient le nom de la page actuelle (dans le nav de la bannière) et le met en gras
+
+nav a:hover 
+Change la couleur des liens du menu lorsqu'on passe la souris dessus
+Transition de 0.5s sans délai
+
+L'image d'arrière plan est en fait une image d'arrière plan (dans le body) avec une couleur d'arrière plan semi-opaque par dessus (dans le div.content)
+
+div.content > * 
+Sélectionne tous les fils de div.content, c'est à dire, tous les éléments qui ne sont pas des bannières violettes/bleues
+
+span.auteur
+Sélectionne tous les noms d'auteur (excepté dans les titres)
+
+@font-face 
+Importe des polices d'écriture qu'on pourra utiliser par la suite
+
+@media screen and (max-width: 1100px)
+Augmente la taille de la bannière en haut de la page pour laisser de la place aux liens lorsque la largeur de la page est inférieure à 1100px
+
+@media screen and (max-width: 450px)
+Réduit les marges des fils de div.content afin de profiter d'une meilleur lisibilité lorsque la largeur de la page est inférieure à 450px
+
+
+############
+sommaire_style.css
+
+div.content > h2:first-of-type
+Sélectionne le premier titre h2 fils de div.content. C'est à dire, le gros titre en dessous de la bannière
+
+div.intro p:first-of-type::first-letter
+Sélectionne la première lettre d'un premier paragraphe emboité dans div.intro. En l'occurence, la première lettre du premier paragraphe
+
+div.livre:hover
+Agrandit la boite du livre et son ombre quand on la survole
+Transition de 1 seconde avec 0.1 seconde de délai
+
+div.livre > h3
+Sélectionne les titres h3 fils de div.livre. En l'occurence, le titre au dessus de l'image dans la boite du livre
+
+@media (max-width: 440px)
+Réduit la taille des livres (et des boites des livres) afin d'avoir une meilleure lisibilité
+
+
+#########
+livres_style.css
+
+div.content > section:first-of-type
+Sélectionne le premier section fils de div.content. Ici, c'est l'introduction (la police d'écriture y est plus grande)
+
+div.content > section:first-of-type h2
+Sélectionne les titres présent dans le premier section fils de div.content. Ici c'est le gros titre en dessous de la bannière
+
+h2 em
+Sélectionne les balises em dans les titres h2. Ici le mot mit en italique dans le gros titre
+
+span.livre
+Sélectionne tous les noms de roman
+
+span.saga
+Sélectionne tous les noms de saga (excepté dans les titres)
+
+section > p:first-of-type::first-letter
+Sélectionne la première lettre d'un premier paragraphe emboité dans div.intro. 
+En l'occurence, la première lettre du premier paragraphe de chaque partie.
+
+@media screen and (max-width: 1200px)
+Annule le flottement de l'image sur la page, et la centre
+
+table td:last-of-type
+Sélectionne la dernière colonne du tableau, ici c'est la colonne avec les couvertures
+
+td img:hover
+Agrandit l'image et son ombre quand on la survole
+Transition de 0.75 seconde
+
+@media screen and (max-width:800px)
+N'affiche plus la dernière colonne du tableau (celle avec les couvertures des livres) quand on passe en dessous de 800px de largeur sur un écran

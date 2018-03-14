@@ -47,13 +47,11 @@ div.caption{
 }
 
 @media (max-width: 440px){
-  div.intro, div.content > h3{
-    margin: 25px;
-  }
-  
   div.livre{
     transform: scale(0.8);
+    margin: -40px auto;
   }
   div.livre:hover{
     transform: scale(0.9);
+}
 }
